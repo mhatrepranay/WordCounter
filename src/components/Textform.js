@@ -18,7 +18,8 @@ export default function Textform(props) {
     const handleclearclick = () => {
         console.log("Uppercase is cliked" + text);
         let newText = '';
-        setText(newText)
+        setText(newText);
+        props.showAlert("Text Cleared", "success");
 
     }
 
